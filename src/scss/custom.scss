@@ -1,0 +1,17 @@
+@import 'settings';
+@import "foundation";
+@include foundation-everything;
+body {
+  h1{
+    color: black;
+    background: green;
+  }
+  p{
+    color: grey;
+  }
+  ul{
+    li{
+      color:blue;
+    }
+  }
+}
