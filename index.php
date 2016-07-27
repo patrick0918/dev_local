@@ -4,8 +4,8 @@
 <body>
 
     <h1>Hello, world!</h1>
+    <h2>new File</h2>
     <p>TEST</p>
-
     <?php include_once 'php/partials/footer.php'; ?>
 </body>
 </html>
