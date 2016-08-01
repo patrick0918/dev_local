@@ -7,6 +7,7 @@
     "grunt": "^1.0.1",
     "grunt-contrib-compass": "latest",
     "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",

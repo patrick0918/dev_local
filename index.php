@@ -6,6 +6,7 @@
     <h1>Hello, world!</h1>
     <h2>new File</h2>
     <p>TEST</p>
+    <i class="fa fa-gitlab"></i>
     <?php include_once 'php/partials/footer.php'; ?>
 </body>
 </html>

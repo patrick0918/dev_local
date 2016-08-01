@@ -1,10 +1,11 @@
 @import 'settings';
 @import "foundation";
 @include foundation-everything;
+@import "font-awesome";
 body {
   h1{
     color: black;
-    background: green;
+    background: blue;
   }
   p{
     color: grey;

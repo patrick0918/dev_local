@@ -12,6 +12,8 @@
     "tests"
   ],
   "devDependencies": {
-    "foundation-sites": "^6.2.3"
+    "foundation-sites": "^6.2.3",
+    "motion-ui": "^1.2.2",
+    "font-awesome": "^4.6.3"
   }
 }

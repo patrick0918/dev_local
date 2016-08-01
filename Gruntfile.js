@@ -79,6 +79,17 @@ module.exports = function(grunt) {
         files: 'src/js/*.js',
         tasks: ['concat:dev']
       }
+    },
+    copy: {
+      dev: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: 'bower_components/font-awesome/fonts/',
+          src: ['*.*'],
+          dest: 'dist/fonts'
+        }]
+      }
     }
   });
 
@@ -93,9 +104,15 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
+  //Copy Font-Awesome Files
+  grunt.registerTask('copy-dev', ['copy:dev']);
+  //Dev Task
   grunt.registerTask('default', ['compass:dev','postcss','concat:dev']);
+  //Watch Dev Files
   grunt.registerTask('watch-dev', ['watch']);
+  //Production Task
   grunt.registerTask('live', ['compass:dist','postcss','cssmin:dist','concat:dist','uglify:dist']);
 
 };
