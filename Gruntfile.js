@@ -38,6 +38,8 @@ module.exports = function(grunt) {
         options: {
           sassDir: ['src/scss'],
           cssDir: ['dist/css'],
+          environment: 'development',
+          sourcemap: true,
           config: 'config/config.rb'
         }
       },
@@ -51,15 +53,35 @@ module.exports = function(grunt) {
       }
     },
     postcss: {
-      options: {
-        processors: [
-          require('autoprefixer')({
-            browsers: ['last 2 versions', 'ie >= 9', 'and_chr >= 2.3']
-          })
-        ]
+      dev:{
+        options: {
+          map: {
+            inline: false
+          },
+          processors: [
+            require('autoprefixer')({
+              browsers: ['last 2 versions', 'ie >= 9', 'and_chr >= 2.3']
+            })
+          ]
+        },
+        dist: {
+          src: 'dist/css/*.css'
+        }
       },
-      dist: {
-        src: 'dist/css/*.css'
+      live:{
+        options: {
+          map: {
+            inline: true
+          },
+          processors: [
+            require('autoprefixer')({
+              browsers: ['last 2 versions', 'ie >= 9', 'and_chr >= 2.3']
+            })
+          ]
+        },
+        dist: {
+          src: 'dist/css/*.css'
+        }
       }
     },
     // configure cssmin to minify css files ------------------------------------
@@ -109,11 +131,11 @@ module.exports = function(grunt) {
   //Copy Font-Awesome Files
   grunt.registerTask('copy-dev', ['copy:dev']);
   //Dev Task
-  grunt.registerTask('default', ['compass:dev','postcss','concat:dev']);
+  grunt.registerTask('default', ['compass:dev','postcss:dev','concat:dev']);
   //Watch Dev Files
   grunt.registerTask('watch-dev', ['watch']);
   //Production Task
-  grunt.registerTask('live', ['compass:dist','postcss','cssmin:dist','concat:dist','uglify:dist']);
+  grunt.registerTask('live', ['compass:dist','postcss:live','cssmin:dist','concat:dist','uglify:dist']);
 
 };
 

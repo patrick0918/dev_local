@@ -2413,18 +2413,6 @@ textarea[rows] {
 }
 
 /* line 125, ../../bower_components/foundation-sites/scss/forms/_text.scss */
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #cacaca;
-}
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: #cacaca;
-}
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: #cacaca;
-}
 input::placeholder,
 textarea::placeholder {
   color: #cacaca;
@@ -2946,10 +2934,8 @@ select[multiple] {
 
 /* line 27, ../../bower_components/foundation-sites/scss/components/_accordion-menu.scss */
 .is-accordion-submenu-parent[aria-expanded='true'] > a::after {
-  -ms-transform-origin: 50% 50%;
-      transform-origin: 50% 50%;
-  -ms-transform: scaleY(-1);
-      transform: scaleY(-1);
+  transform-origin: 50% 50%;
+  transform: scaleY(-1);
 }
 
 /* line 40, ../../bower_components/foundation-sites/scss/components/_badge.scss */
@@ -3510,13 +3496,11 @@ select[multiple] {
 .is-drilldown-submenu.is-active {
   z-index: 1;
   display: block;
-  -ms-transform: translateX(-100%);
-      transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 /* line 53, ../../bower_components/foundation-sites/scss/components/_drilldown.scss */
 .is-drilldown-submenu.is-closing {
-  -ms-transform: translateX(100%);
-      transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 /* line 59, ../../bower_components/foundation-sites/scss/components/_drilldown.scss */
@@ -4079,8 +4063,7 @@ body {
   z-index: -1;
   max-height: 100%;
   overflow-y: auto;
-  -ms-transform: translateX(0);
-      transform: translateX(0);
+  transform: translateX(0);
 }
 /* line 169, ../../bower_components/foundation-sites/scss/util/_mixins.scss */
 [data-whatinput='mouse'] .off-canvas {
@@ -4094,8 +4077,7 @@ body {
 }
 /* line 124, ../../bower_components/foundation-sites/scss/components/_off-canvas.scss */
 .is-open-left {
-  -ms-transform: translateX(250px);
-      transform: translateX(250px);
+  transform: translateX(250px);
 }
 /* line 160, ../../bower_components/foundation-sites/scss/components/_off-canvas.scss */
 .off-canvas.position-right {
@@ -4105,8 +4087,7 @@ body {
 }
 /* line 124, ../../bower_components/foundation-sites/scss/components/_off-canvas.scss */
 .is-open-right {
-  -ms-transform: translateX(-250px);
-      transform: translateX(-250px);
+  transform: translateX(-250px);
 }
 
 @media screen and (min-width: 40em) {
@@ -4206,8 +4187,7 @@ body {
 .orbit-previous, .orbit-next {
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 10;
   padding: 1rem;
   color: #fefefe;
@@ -4386,8 +4366,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   position: absolute;
   margin: 0;
   font-size: 0.75rem;
@@ -4404,12 +4383,8 @@ body {
   margin-bottom: 2.25rem;
   background-color: #e6e6e6;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -ms-touch-action: none;
-      touch-action: none;
+  user-select: none;
+  touch-action: none;
 }
 
 /* line 107, ../../bower_components/foundation-sites/scss/components/_slider.scss */
@@ -4432,8 +4407,7 @@ body {
 .slider-handle {
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  transform: translateY(-50%);
   position: absolute;
   left: 0;
   z-index: 1;
@@ -4442,8 +4416,7 @@ body {
   height: 1.4rem;
   background-color: #2199e8;
   transition: all 0.2s ease-in-out;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   border-radius: 0;
 }
 /* line 169, ../../bower_components/foundation-sites/scss/util/_mixins.scss */
@@ -4472,8 +4445,7 @@ body {
   width: 0.5rem;
   height: 12.5rem;
   margin: 0 1.25rem;
-  -ms-transform: scale(1, -1);
-      transform: scale(1, -1);
+  transform: scale(1, -1);
 }
 /* line 84, ../../bower_components/foundation-sites/scss/components/_slider.scss */
 .slider.vertical .slider-fill {
@@ -4488,8 +4460,7 @@ body {
   left: 50%;
   width: 1.4rem;
   height: 1.4rem;
-  -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 /* line 6, ../../bower_components/foundation-sites/scss/components/_sticky.scss */
@@ -4539,10 +4510,7 @@ html.is-reveal-open,
 html.is-reveal-open body {
   height: 100%;
   overflow: hidden;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 /* line 125, ../../bower_components/foundation-sites/scss/components/_reveal.scss */
@@ -4669,10 +4637,7 @@ html.is-reveal-open body {
   margin-bottom: 1rem;
   outline: 0;
   position: relative;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   color: #fefefe;
   font-weight: bold;
   font-size: 0.875rem;
@@ -4732,8 +4697,7 @@ input:checked ~ .switch-paddle::after {
 .switch-active, .switch-inactive {
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* line 209, ../../bower_components/foundation-sites/scss/components/_switch.scss */
@@ -5106,8 +5070,7 @@ table.hover tr:nth-of-type(even):hover {
   bottom: 100%;
   position: absolute;
   left: 50%;
-  -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 /* line 72, ../../bower_components/foundation-sites/scss/components/_tooltip.scss */
 .tooltip.top::before {
@@ -5135,8 +5098,7 @@ table.hover tr:nth-of-type(even):hover {
   bottom: auto;
   left: 100%;
   top: 50%;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 /* line 86, ../../bower_components/foundation-sites/scss/components/_tooltip.scss */
 .tooltip.right::before {
@@ -5152,8 +5114,7 @@ table.hover tr:nth-of-type(even):hover {
   left: auto;
   right: 100%;
   top: 50%;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* line 119, ../../bower_components/foundation-sites/scss/components/_top-bar.scss */
@@ -5526,24 +5487,40 @@ table.hover tr:nth-of-type(even):hover {
 
 /* line 4, ../../bower_components/font-awesome/scss/_animated.scss */
 .fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
 }
 
 /* line 9, ../../bower_components/font-awesome/scss/_animated.scss */
 .fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
 }
-@keyframes fa-spin {
+
+@-webkit-keyframes fa-spin {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
 /* line 4, ../../bower_components/font-awesome/scss/_rotated-flipped.scss */
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
@@ -5551,6 +5528,7 @@ table.hover tr:nth-of-type(even):hover {
 /* line 5, ../../bower_components/font-awesome/scss/_rotated-flipped.scss */
 .fa-rotate-180 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -5558,6 +5536,7 @@ table.hover tr:nth-of-type(even):hover {
 /* line 6, ../../bower_components/font-awesome/scss/_rotated-flipped.scss */
 .fa-rotate-270 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
@@ -5565,6 +5544,7 @@ table.hover tr:nth-of-type(even):hover {
 /* line 8, ../../bower_components/font-awesome/scss/_rotated-flipped.scss */
 .fa-flip-horizontal {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
@@ -5572,6 +5552,7 @@ table.hover tr:nth-of-type(even):hover {
 /* line 9, ../../bower_components/font-awesome/scss/_rotated-flipped.scss */
 .fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1);
 }
@@ -5582,8 +5563,7 @@ table.hover tr:nth-of-type(even):hover {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 /* line 4, ../../bower_components/font-awesome/scss/_stacked.scss */
@@ -8909,16 +8889,622 @@ table.hover tr:nth-of-type(even):hover {
   clip: auto;
 }
 
-/* line 6, ../../src/scss/custom.scss */
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-in-down.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateY(-100%);
+  transition-property: transform, opacity;
+  backface-visibility: hidden;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-in-down.mui-enter.mui-enter-active {
+  transform: translateY(0);
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-in-left.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateX(-100%);
+  transition-property: transform, opacity;
+  backface-visibility: hidden;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-in-left.mui-enter.mui-enter-active {
+  transform: translateX(0);
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-in-up.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateY(100%);
+  transition-property: transform, opacity;
+  backface-visibility: hidden;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-in-up.mui-enter.mui-enter-active {
+  transform: translateY(0);
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-in-right.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateX(100%);
+  transition-property: transform, opacity;
+  backface-visibility: hidden;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-in-right.mui-enter.mui-enter-active {
+  transform: translateX(0);
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-out-down.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateY(0);
+  transition-property: transform, opacity;
+  backface-visibility: hidden;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-out-down.mui-leave.mui-leave-active {
+  transform: translateY(100%);
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-out-right.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateX(0);
+  transition-property: transform, opacity;
+  backface-visibility: hidden;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-out-right.mui-leave.mui-leave-active {
+  transform: translateX(100%);
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-out-up.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateY(0);
+  transition-property: transform, opacity;
+  backface-visibility: hidden;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-out-up.mui-leave.mui-leave-active {
+  transform: translateY(-100%);
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-out-left.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: translateX(0);
+  transition-property: transform, opacity;
+  backface-visibility: hidden;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.slide-out-left.mui-leave.mui-leave-active {
+  transform: translateX(-100%);
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.fade-in.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  opacity: 0;
+  transition-property: opacity;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.fade-in.mui-enter.mui-enter-active {
+  opacity: 1;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.fade-out.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  opacity: 1;
+  transition-property: opacity;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.fade-out.mui-leave.mui-leave-active {
+  opacity: 0;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-in-from-top.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotateX(-90deg);
+  transform-origin: top;
+  transition-property: transform, opacity;
+  opacity: 0;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-in-from-top.mui-enter.mui-enter-active {
+  transform: perspective(2000px) rotate(0deg);
+  opacity: 1;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-in-from-right.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotateY(-90deg);
+  transform-origin: right;
+  transition-property: transform, opacity;
+  opacity: 0;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-in-from-right.mui-enter.mui-enter-active {
+  transform: perspective(2000px) rotate(0deg);
+  opacity: 1;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-in-from-bottom.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotateX(90deg);
+  transform-origin: bottom;
+  transition-property: transform, opacity;
+  opacity: 0;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-in-from-bottom.mui-enter.mui-enter-active {
+  transform: perspective(2000px) rotate(0deg);
+  opacity: 1;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-in-from-left.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotateY(90deg);
+  transform-origin: left;
+  transition-property: transform, opacity;
+  opacity: 0;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-in-from-left.mui-enter.mui-enter-active {
+  transform: perspective(2000px) rotate(0deg);
+  opacity: 1;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-in-from-middle-x.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotateX(-90deg);
+  transform-origin: center;
+  transition-property: transform, opacity;
+  opacity: 0;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-in-from-middle-x.mui-enter.mui-enter-active {
+  transform: perspective(2000px) rotate(0deg);
+  opacity: 1;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-in-from-middle-y.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotateY(-90deg);
+  transform-origin: center;
+  transition-property: transform, opacity;
+  opacity: 0;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-in-from-middle-y.mui-enter.mui-enter-active {
+  transform: perspective(2000px) rotate(0deg);
+  opacity: 1;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-out-from-top.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotate(0deg);
+  transform-origin: top;
+  transition-property: transform, opacity;
+  opacity: 1;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-out-from-top.mui-leave.mui-leave-active {
+  transform: perspective(2000px) rotateX(-90deg);
+  opacity: 0;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-out-from-right.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotate(0deg);
+  transform-origin: right;
+  transition-property: transform, opacity;
+  opacity: 1;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-out-from-right.mui-leave.mui-leave-active {
+  transform: perspective(2000px) rotateY(-90deg);
+  opacity: 0;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-out-from-bottom.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotate(0deg);
+  transform-origin: bottom;
+  transition-property: transform, opacity;
+  opacity: 1;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-out-from-bottom.mui-leave.mui-leave-active {
+  transform: perspective(2000px) rotateX(90deg);
+  opacity: 0;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-out-from-left.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotate(0deg);
+  transform-origin: left;
+  transition-property: transform, opacity;
+  opacity: 1;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-out-from-left.mui-leave.mui-leave-active {
+  transform: perspective(2000px) rotateY(90deg);
+  opacity: 0;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-out-from-middle-x.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotate(0deg);
+  transform-origin: center;
+  transition-property: transform, opacity;
+  opacity: 1;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-out-from-middle-x.mui-leave.mui-leave-active {
+  transform: perspective(2000px) rotateX(-90deg);
+  opacity: 0;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-out-from-middle-y.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: perspective(2000px) rotate(0deg);
+  transform-origin: center;
+  transition-property: transform, opacity;
+  opacity: 1;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.hinge-out-from-middle-y.mui-leave.mui-leave-active {
+  transform: perspective(2000px) rotateY(-90deg);
+  opacity: 0;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.scale-in-up.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: scale(0.5);
+  transition-property: transform, opacity;
+  opacity: 0;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.scale-in-up.mui-enter.mui-enter-active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.scale-in-down.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: scale(1.5);
+  transition-property: transform, opacity;
+  opacity: 0;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.scale-in-down.mui-enter.mui-enter-active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.scale-out-up.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: scale(1);
+  transition-property: transform, opacity;
+  opacity: 1;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.scale-out-up.mui-leave.mui-leave-active {
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.scale-out-down.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: scale(1);
+  transition-property: transform, opacity;
+  opacity: 1;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.scale-out-down.mui-leave.mui-leave-active {
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.spin-in.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: rotate(-0.75turn);
+  transition-property: transform, opacity;
+  opacity: 0;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.spin-in.mui-enter.mui-enter-active {
+  transform: rotate(0);
+  opacity: 1;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.spin-out.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: rotate(0);
+  transition-property: transform, opacity;
+  opacity: 1;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.spin-out.mui-leave.mui-leave-active {
+  transform: rotate(0.75turn);
+  opacity: 0;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.spin-in-ccw.mui-enter {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: rotate(0.75turn);
+  transition-property: transform, opacity;
+  opacity: 0;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.spin-in-ccw.mui-enter.mui-enter-active {
+  transform: rotate(0);
+  opacity: 1;
+}
+
+/* line 22, ../../bower_components/motion-ui/src/util/_transition.scss */
+.spin-out-ccw.mui-leave {
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transform: rotate(0);
+  transition-property: transform, opacity;
+  opacity: 1;
+}
+/* line 34, ../../bower_components/motion-ui/src/util/_transition.scss */
+.spin-out-ccw.mui-leave.mui-leave-active {
+  transform: rotate(-0.75turn);
+  opacity: 0;
+}
+
+/* line 56, ../../bower_components/motion-ui/src/_classes.scss */
+.slow {
+  transition-duration: 750ms !important;
+}
+
+/* line 56, ../../bower_components/motion-ui/src/_classes.scss */
+.fast {
+  transition-duration: 250ms !important;
+}
+
+/* line 62, ../../bower_components/motion-ui/src/_classes.scss */
+.linear {
+  transition-timing-function: linear !important;
+}
+
+/* line 62, ../../bower_components/motion-ui/src/_classes.scss */
+.ease {
+  transition-timing-function: ease !important;
+}
+
+/* line 62, ../../bower_components/motion-ui/src/_classes.scss */
+.ease-in {
+  transition-timing-function: ease-in !important;
+}
+
+/* line 62, ../../bower_components/motion-ui/src/_classes.scss */
+.ease-out {
+  transition-timing-function: ease-out !important;
+}
+
+/* line 62, ../../bower_components/motion-ui/src/_classes.scss */
+.ease-in-out {
+  transition-timing-function: ease-in-out !important;
+}
+
+/* line 62, ../../bower_components/motion-ui/src/_classes.scss */
+.bounce-in {
+  transition-timing-function: cubic-bezier(0.485, 0.155, 0.24, 1.245) !important;
+}
+
+/* line 62, ../../bower_components/motion-ui/src/_classes.scss */
+.bounce-out {
+  transition-timing-function: cubic-bezier(0.485, 0.155, 0.515, 0.845) !important;
+}
+
+/* line 62, ../../bower_components/motion-ui/src/_classes.scss */
+.bounce-in-out {
+  transition-timing-function: cubic-bezier(0.76, -0.245, 0.24, 1.245) !important;
+}
+
+/* line 68, ../../bower_components/motion-ui/src/_classes.scss */
+.short-delay {
+  transition-delay: 300ms !important;
+}
+
+/* line 68, ../../bower_components/motion-ui/src/_classes.scss */
+.long-delay {
+  transition-delay: 700ms !important;
+}
+
+/* line 76, ../../bower_components/motion-ui/src/_classes.scss */
+.shake {
+  animation-name: shake-7;
+}
+@keyframes shake-7 {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
+    transform: translateX(7%);
+  }
+  5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
+    transform: translateX(-7%);
+  }
+}
+/* line 77, ../../bower_components/motion-ui/src/_classes.scss */
+.spin-cw {
+  animation-name: spin-cw-1turn;
+}
+@keyframes spin-cw-1turn {
+  0% {
+    transform: rotate(-1turn);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+/* line 78, ../../bower_components/motion-ui/src/_classes.scss */
+.spin-ccw {
+  animation-name: spin-cw-1turn;
+}
+@keyframes spin-cw-1turn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+/* line 79, ../../bower_components/motion-ui/src/_classes.scss */
+.wiggle {
+  animation-name: wiggle-7deg;
+}
+@keyframes wiggle-7deg {
+  40%, 50%, 60% {
+    transform: rotate(7deg);
+  }
+  35%, 45%, 55%, 65% {
+    transform: rotate(-7deg);
+  }
+  0%, 30%, 70%, 100% {
+    transform: rotate(0);
+  }
+}
+/* line 81, ../../bower_components/motion-ui/src/_classes.scss */
+.shake,
+.spin-cw,
+.spin-ccw,
+.wiggle {
+  animation-duration: 500ms;
+}
+
+/* line 90, ../../bower_components/motion-ui/src/_classes.scss */
+.infinite {
+  animation-iteration-count: infinite;
+}
+
+/* line 94, ../../bower_components/motion-ui/src/_classes.scss */
+.slow {
+  animation-duration: 750ms !important;
+}
+
+/* line 94, ../../bower_components/motion-ui/src/_classes.scss */
+.fast {
+  animation-duration: 250ms !important;
+}
+
+/* line 100, ../../bower_components/motion-ui/src/_classes.scss */
+.linear {
+  animation-timing-function: linear !important;
+}
+
+/* line 100, ../../bower_components/motion-ui/src/_classes.scss */
+.ease {
+  animation-timing-function: ease !important;
+}
+
+/* line 100, ../../bower_components/motion-ui/src/_classes.scss */
+.ease-in {
+  animation-timing-function: ease-in !important;
+}
+
+/* line 100, ../../bower_components/motion-ui/src/_classes.scss */
+.ease-out {
+  animation-timing-function: ease-out !important;
+}
+
+/* line 100, ../../bower_components/motion-ui/src/_classes.scss */
+.ease-in-out {
+  animation-timing-function: ease-in-out !important;
+}
+
+/* line 100, ../../bower_components/motion-ui/src/_classes.scss */
+.bounce-in {
+  animation-timing-function: cubic-bezier(0.485, 0.155, 0.24, 1.245) !important;
+}
+
+/* line 100, ../../bower_components/motion-ui/src/_classes.scss */
+.bounce-out {
+  animation-timing-function: cubic-bezier(0.485, 0.155, 0.515, 0.845) !important;
+}
+
+/* line 100, ../../bower_components/motion-ui/src/_classes.scss */
+.bounce-in-out {
+  animation-timing-function: cubic-bezier(0.76, -0.245, 0.24, 1.245) !important;
+}
+
+/* line 106, ../../bower_components/motion-ui/src/_classes.scss */
+.short-delay {
+  animation-delay: 300ms !important;
+}
+
+/* line 106, ../../bower_components/motion-ui/src/_classes.scss */
+.long-delay {
+  animation-delay: 700ms !important;
+}
+
+/* line 7, ../../src/scss/custom.scss */
 body h1 {
   color: black;
-  background: blue;
+  background: yellow;
 }
-/* line 10, ../../src/scss/custom.scss */
+/* line 11, ../../src/scss/custom.scss */
 body p {
-  color: grey;
+  color: yellow;
 }
-/* line 14, ../../src/scss/custom.scss */
+/* line 15, ../../src/scss/custom.scss */
 body ul li {
-  color: blue;
+  color: yellow;
 }
+
+/*# sourceMappingURL=custom.css.map */

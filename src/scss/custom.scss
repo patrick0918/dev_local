@@ -2,17 +2,18 @@
 @import "foundation";
 @include foundation-everything;
 @import "font-awesome";
+@import "motion-ui";
 body {
   h1{
     color: black;
-    background: blue;
+    background: yellow;
   }
   p{
-    color: grey;
+    color: yellow;
   }
   ul{
     li{
-      color:blue;
+      color:yellow;
     }
   }
 }
